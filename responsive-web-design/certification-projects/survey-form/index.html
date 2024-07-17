@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ferhat Yenilmez" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Something of a Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to fill this unnecessary form.
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name:
+        <input
+          id="name"
+          name="name"
+          required
+          type="text"
+          placeholder="Name Surname"
+        />
+      </label>
+      <label for="email" id="email-label">
+        Surname:
+        <input
+          id="email"
+          name="email"
+          required
+          type="email"
+          placeholder="email@email.com"
+        />
+      </label>
+      <label for="number" id="number-label">
+        Age:
+        <input
+          id="number"
+          name="number"
+          max="150"
+          min="1"
+          type="number"
+          placeholder="22"
+        />
+      </label>
+      <label for="dropdown">
+        How annoying do you find this survey?
+        <select id="dropdown" name="dropdown">
+          <option value="0">Not annoying at all!</option>
+          <option value="1">A little bit</option>
+          <option value="2">Moderately</option>
+          <option value="3">It gets on my nerves</option>
+          <option value="4">It's super-duper annoying!</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>
+          Would you recommend this survey to others? (Please don't, it increases
+          our server expenses)
+        </legend>
+        <label for="yes-rec">
+          <input id="yes-rec" name="recommendation" type="radio" value="1" />
+          Yeah, I don't care about your server expenses!
+        </label>
+        <label for="no-rec">
+          <input
+            id="no-rec"
+            checked
+            name="recommendation"
+            type="radio"
+            value="0"
+          />
+          No, I am a thoughtful person.
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved in this survey?</legend>
+        <label for="style-imp">
+          <input
+            id="style-imp"
+            name="improvement"
+            type="checkbox"
+            value="style"
+          />
+          Style
+        </label>
+        <label for="questions-imp">
+          <input
+            id="questions-imp"
+            name="improvement"
+            type="checkbox"
+            value="questions"
+          />
+          Questions
+        </label>
+        <label for="performance-imp">
+          <input
+            id="performance-imp"
+            name="improvement"
+            type="checkbox"
+            value="performance"
+          />
+          Performance
+        </label>
+      </fieldset>
+      <label for="comments">
+        Any suggestions?
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="I am not gonna read this, so don't waste your time."
+        ></textarea>
+      </label>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
