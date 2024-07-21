@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+html {
+  font-size: 16px;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(22, 22, 22);
+  color: rgba(233, 233, 233);
+}
+
+aside {
+  position: fixed;
+  width: 25rem;
+}
+
+main {
+  margin-left: 25rem;
+}
+
+main section {
+  margin-bottom: 1rem;
+}
+
+aside nav ul li {
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  width: 100%;
+}
+
+a:hover {
+  background: rgba(233, 233, 233);
+  color: rgba(22, 22, 22);
+}
+
+header {
+  font-size: 2rem;
+}
+
+code {
+  display: block;
+  font-style: italic;
+}
+
+section ul {
+  margin: 1rem 3rem 0 3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
