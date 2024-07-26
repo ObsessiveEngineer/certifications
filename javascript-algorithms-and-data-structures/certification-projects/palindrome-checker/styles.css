@@ -1,0 +1,73 @@
+:root {
+  --bg-color: rgba(15, 15, 15, 1);
+  --fg-color: rgba(240, 240, 240, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--fg-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 100vh;
+}
+
+main > * {
+  width: max(20rem, 30%);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+h1,
+#result {
+  text-align: center;
+}
+
+#text-input,
+#check-btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: var(--bg-color);
+  background: var(--fg-color);
+  border: none;
+  font-weight: bold;
+}
+
+#text-input {
+  min-width: 10rem;
+  flex: 0.8;
+}
+
+#check-btn {
+  flex: 0.2;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.red {
+  color: rgba(255, 0, 0, 1);
+}
+
+.green {
+  color: rgba(0, 255, 0, 1);
+}
