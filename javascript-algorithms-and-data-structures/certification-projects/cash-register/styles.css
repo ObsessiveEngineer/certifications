@@ -1,0 +1,97 @@
+:root {
+  --bg-dark: rgba(15, 15, 15);
+  --bg-light: rgba(240, 240, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--bg-light);
+}
+
+main,
+ul,
+form,
+#change-due {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main {
+  height: 100vh;
+  flex-direction: column;
+}
+
+main > * {
+  width: max(320px, 30%);
+}
+
+.register {
+  background: darkgrey;
+  padding: 1rem;
+}
+
+ul {
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+ul,
+#price {
+  background: var(--bg-light);
+  color: var(--bg-dark);
+  padding: 0.5rem;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+#purchase-btn {
+  background: rgb(127, 255, 127);
+  cursor: pointer;
+  width: 30%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+}
+
+#cash {
+  width: 70%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+}
+
+#price {
+  width: max-content;
+  font-size: 1.25rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#change-due {
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+#change-due > * {
+  width: 100%;
+}
+
+form label {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--bg-dark);
+}
