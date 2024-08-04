@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(15, 15, 15);
+  color: rgba(240, 240, 240);
+}
+
+main,
+.container,
+form,
+#types,
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 100vh;
+}
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+form,
+table,
+figure {
+  width: max(20rem, 30%);
+}
+
+table {
+  background: linear-gradient(45deg, cyan, violet);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+#search-input,
+#search-button {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: rgba(15, 15, 15);
+  background: rgba(240, 240, 240);
+}
+
+#search-input {
+  width: 70%;
+}
+
+#search-button {
+  width: 30%;
+}
+
+td,
+th {
+  padding: 1rem;
+  color: rgba(15, 15, 15);
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+th {
+  font-size: 1.25rem;
+}
+
+figure {
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 12rem;
+  background: linear-gradient(45deg, cyan, violet);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: rgba(15, 15, 15);
+  font-weight: bold;
+}
+
+figure > * {
+  padding: 0.5rem;
+}
+
+#types {
+  gap: 1rem;
+}
+
+#nameid > {
+  display: inline-block;
+}
+
+figure img {
+  transform: scale(1.5);
+}
